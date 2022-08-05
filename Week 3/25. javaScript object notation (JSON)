@@ -1,0 +1,30 @@
+// JSON is used to transfer data between web clients and servers
+// It's very lightweight, with syntax very similar to "a stringified JavaScript object".
+// Second, it's easier to handle in JavaScript code, since, JSON, after all, is just a subset of JavaScript.
+
+
+// JSON string to object
+
+// JSON String
+
+const jsonStr1 = '{"greeting": "hi"}'
+
+// parsing json string and assigning to a const
+const aPlainObj = JSON.parse(jsonStr1);
+
+// outputting object 
+console.log(aPlainObj.greeting);	// hi
+
+
+
+// Object to JSON string
+
+const data = {
+	key1: 'value1',
+	key2: 'value2',
+	key3: 'value3'
+}
+
+const jsonStr2 = JSON.stringify(data);
+
+console.log(jsonStr2);	// {"key1":"value1","key2":"value2","key3":"value3"}
