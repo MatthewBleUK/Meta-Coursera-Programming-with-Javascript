@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Modules</title>
+</head>
+<body>
+	
+
+	<!-- Javascript modules can be used like this (Cannot be ran locally. Must be ran in a server)-->
+	<script type="module">
+		// this allows you to use code from other js files
+		import { informationGreeting } from './greeting.js';
+
+		formalGreeting('john');
+	</script>
+</body>
+</html>
